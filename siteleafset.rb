@@ -11,42 +11,42 @@ cheatsheet do
     id 'Site Variables'  # Must be unique and is used as title of the category
 
     entry do
-      name 'Site Title'    
+      name 'Site title'    
       notes 'The title of your website.'      # Optional longer explanation, can contain Markdown or HTML
       command 'site.title'
     end
     entry do
-      name 'Site Domain'
+      name 'Site domain'
       command 'site.domain'
       notes 'Your website’s domain name (ie. barlawrence.com).'
     end
     entry do
-      name 'Site Permalink'
+      name 'Site permalink'
       command 'site.permalink'
       notes 'Your website’s full address (ie. http://barlawrence.com).'
     end
     entry do
-      name 'Site Pages'
+      name 'Site pages'
       command 'site.pages'
       notes 'A nested array of pages.'
     end
     entry do
-      name 'Site Posts'
+      name 'Site posts'
       command 'site.posts'
       notes 'Array of all posts in all pages.'
     end
     entry do
-      name 'Site RSS Feed'
+      name 'Site RSS feed'
       command 'site.feed_url'
       notes 'URL to your website’s RSS feed (ie. http://barlawrence.com/feed.xml).'
     end
     entry do
-      name 'Site Sitemap URL'
+      name 'Site sitemap URL'
       command 'site.sitemap_url'
       notes 'URL to your website’s Sitemap file (ie. http://barlawrence.com/sitemap.xml).'
     end
     entry do
-      name 'Site Publish Date'
+      name 'Site publish date'
       command 'site.date'
       notes 'Date of most recent publish.'
     end    
@@ -80,7 +80,7 @@ cheatsheet do
       notes 'Body in HTML (rendered form Markdown), available in `page` and `post` types).'      
     end
     entry do
-      name 'Raw Body'
+      name 'Raw body'
       command 'body_raw'    
       notes 'Body in raw Markdown, available in `page` and `post` types.'      
     end
@@ -90,7 +90,7 @@ cheatsheet do
       notes 'Shorened version of the body (use 2 empty lines to break), available in `page` and `post` types.'      
     end
     entry do
-      name 'Raw Excerpt'
+      name 'Raw excerpt'
       command 'excerpt_raw'    
       notes 'Excerpt in raw Markdwown, available in `page` and `post` types.'      
     end
@@ -145,7 +145,7 @@ cheatsheet do
       notes 'Parent page object (if exists)'
     end
     entry do
-      name 'URL Archive'
+      name 'URL archive'
       command 'archive_url'
       notes 'URL to archive page, available in `page` type only.'
     end
@@ -155,32 +155,32 @@ cheatsheet do
       notes 'Date of publish, available in `page` and `post` types.'
     end
     entry do
-      name 'Last Updated'
+      name 'Last updated'
       command 'updated_at'
       notes 'Date of last update.'
     end
     entry do
-      name 'Author Full Name'
+      name 'Author full name'
       command 'author.fullname'
       notes 'Full name of author, available in `page` or `post` types.'
     end
     entry do
-      name 'Author First Name'
+      name 'Author first name'
       command 'author.firstname'
       notes 'First name of the author, available in `page` or `post` types.'
     end
     entry do
-      name 'Author Last Name'
+      name 'Author last name'
       command 'author.lastname'
       notes 'Last name of author, available in `page` or `post` types.'
     end
     entry do
-      name 'Author\'s Email'
+      name 'Author\'s email'
       command 'author.email'
       notes 'Author\'s email, available in `page` and `post` types.'
     end
     entry do
-      name 'Author\'s Avatar'
+      name 'Author\'s avatar'
       command 'author.avatar'
       notes 'Author\'s Gravatar URL, available in `page` and `post` types.'
     end
@@ -214,12 +214,12 @@ cheatsheet do
       notes 'FUll URL to object with domain (e.g. `http://mysite.com/assets/photo.jpg`).'
     end
     entry do
-      name 'Content Type'
+      name 'Content type'
       command 'content_type'
       notes 'MIME type of asset (e.g. `image/jpeg`).'
     end
     entry do
-      name 'File Size'
+      name 'File size'
       command 'filesize'
       notes 'Size of file in bytes (e.g. `1024`)'
     end
@@ -238,7 +238,7 @@ cheatsheet do
       notes 'Array of all metadata key/value'
     end
     entry do
-      name 'Meta by Key'
+      name 'Meta by key'
       command 'meta.KEY'
       notes 'Get single metadata by key (e.g. `Color`).'
     end
@@ -262,7 +262,7 @@ cheatsheet do
       notes 'Array of all taxonomy sets.'
     end
     entry do
-      name 'Taxonomy Key'
+      name 'Taxonomy key'
       command 'taxonomy.KEY'
       notes 'Get tags by set name (e.g. `Tags`).'
     end
@@ -292,7 +292,7 @@ cheatsheet do
       notes 'Array of tags in set.'
     end
     entry do
-      name 'Tags Key'
+      name 'Tags key'
       command 'tags.Key'
       notes 'Get a single tag by name (e.g. `Design`).'
     end
@@ -329,7 +329,7 @@ cheatsheet do
   category do
     id 'Code Samples'
     entry do
-      name 'Basic Output'
+      name 'Basic output'
       notes <<-'END'
         ```html
         <h2>{{title}}</h2>
@@ -354,7 +354,7 @@ cheatsheet do
       END
     end
     entry do
-      name 'Asset Loop'
+      name 'Asset loop'
       notes <<-'END'
         ```html
         {% for asset in assets %}
@@ -373,7 +373,7 @@ cheatsheet do
       END
     end
     entry do
-      name 'Navigation Menu'
+      name 'Navigation menu'
       notes <<-'END'
         ```html
       <nav>
